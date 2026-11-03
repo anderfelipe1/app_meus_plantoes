@@ -1,0 +1,8 @@
+{
+ "name":"app-medico-d1-connection",
+ "main":"worker.mjs",
+ "compatibility_date":"2026-11-02",
+ "account_id":"2230a4ff24f4e80cd70ff2c8dba7c5d0",
+ "workers_dev":true,
+ "d1_databases":[{"binding":"DB","database_name":"app-medico","database_id":"3fb2087d-15b7-4f40-bbd8-f639cf79b7c5"}]
+}

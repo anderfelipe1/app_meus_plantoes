@@ -1,0 +1,41 @@
+{
+  "version": "7",
+  "dialect": "sqlite",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "6",
+      "when": 1793628677637,
+      "tag": "0000_clear_marvex",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "6",
+      "when": 1793629964636,
+      "tag": "0001_first_cloak",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "6",
+      "when": 1793648821003,
+      "tag": "0002_closed_serpent_society",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "6",
+      "when": 1793649084064,
+      "tag": "0003_green_jubilee",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "6",
+      "when": 1793653068952,
+      "tag": "0004_furry_zodiak",
+      "breakpoints": true
+    }
+  ]
+}

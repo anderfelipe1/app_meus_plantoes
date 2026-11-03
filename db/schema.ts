@@ -1,0 +1,5 @@
+import { sqliteTable, text, integer, real, uniqueIndex } from 'drizzle-orm/sqlite-core';
+export const shifts = sqliteTable('shifts', {id:text('id').primaryKey(), owner:text('owner').notNull(), date:text('date').notNull(), company:text('company').notNull(), cents:integer('cents').notNull(), paid:integer('paid').notNull().default(0), service:text('service').notNull().default('Plantão 12h'),overtimeHours:real('overtime_hours').notNull().default(0),privateCount:integer('private_count').notNull().default(0),baseCents:integer('base_cents'), period:text('period'), pediatricCount:integer('pediatric_count').notNull().default(0), pediatricCents:integer('pediatric_cents').notNull().default(24000), note:text('note').notNull().default('')});
+
+export const frequencyReports = sqliteTable('frequency_reports', {id:text('id').primaryKey(),owner:text('owner').notNull(),month:text('month').notNull(),dates:text('dates').notNull(),downloadKey:text('download_key'),downloadExpires:text('download_expires'),createdAt:text('created_at').notNull()}, t=>[uniqueIndex('frequency_owner_month').on(t.owner,t.month)]);
+
